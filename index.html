@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Embria test</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto&amp;subset=cyrillic" rel="stylesheet">
+</head>
+<body class="body">
+  <header class="main-header">
+      <p class="main-header__description">Турниры</p>
+      <div class="main-header__menu-btn">
+        <img class="main-header__burger" src="img/menu-burger.png" alt="Меню">
+      </div>
+      <h2 class="main-header__title">32 566 534 203 ₽ уже выплачено!</h2>
+  </header>
+  <main class="main">
+    <form class="filters" action="index.html" method="get">
+
+      <input class="filters__radio" type="radio" data-type="*" id="filter-all" name="filter" value="all" checked>
+      <label class="filters__label" for="filter-all">Все турниры</label>
+
+      <input class="filters__radio" type="radio" data-type="active" id="filter-active" name="filter" value="active">
+      <label class="filters__label" for="filter-active">Активные турниры</label>
+
+      <input class="filters__radio" type="radio" data-type="soon" id="filter-soon" name="filter" value="soon">
+      <label class="filters__label" for="filter-soon">Ближайшие турниры</label>
+
+      <input class="filters__radio" type="radio" data-type="vip" id="filter-vip" name="filter" value="vip">
+      <label class="filters__label" for="filter-vip">VIP-турниры</label>
+
+      <input class="filters__radio" type="radio" data-type="past" id="filter-past" name="filter" value="past">
+      <label class="filters__label" for="filter-past">Прошедшие турниры</label>
+    </form>
+    <div class="content">
+      <div class="content__item content__item--hero" data-type="active">
+        <div class="content__icon">
+          <span class="content__best">Только для лучших</span>
+          <span class="content__vip">Только для VIP</span>
+        </div>
+        <h2 class="content__title content__title--hit">Это Спарта!</h2>
+        <p class="content__decription content__decription--hit">Уже идёт</p>
+        <a class="content__link" href="#">Присоединиться</a>
+      </div>
+      <div class="content__item content__item--crown" data-type="vip">
+        <div class="content__icon">
+          <span class="content__best">Только для лучших</span>
+          <span class="content__vip">Только для VIP</span>
+        </div>
+        <a class="content__ref" href="#">
+          <h2 class="content__title"><span class="content__title content__title--green">Топ 13</span> царских корон</h2>
+        </a>
+        <p class="content__decription">Ты в топ-10 лидеров</p>
+      </div>
+      <div class="content__item content__item--rocket" data-type="soon">
+        <div class="content__icon">
+          <span class="content__best">Только для лучших</span>
+          <span class="content__vip">Только для VIP</span>
+        </div>
+        <a class="content__ref" href="#">
+          <h2 class="content__title">Гагарин в космосе</h2>
+        </a>
+        <p class="content__decription">Ты на 5 уровне</p>
+      </div>
+    </div>
+  </main>
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/isotope.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
